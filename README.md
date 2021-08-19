@@ -2,6 +2,10 @@
 
 SARA is designed to help centralize reporting, synchronization and other functions.
 
+## Running console commands
+
+List available commands: `poetry run sara` 
+
 ## Development
 
 ```shell
