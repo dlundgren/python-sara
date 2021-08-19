@@ -1,0 +1,13 @@
+[default]
+SQLALCHEMY_TRACK_MODIFICATIONS    = false
+SQLALCHEMY_DATABASE_URI           = "sqlite:///../var/db/default.db"
+SQLALCHEMY_BINDS.warehouse_custom = "sqlite:///../var/db/warehouse_custom.db"
+SQLALCHEMY_BINDS.warehose_core    = "sqlite:///../var/db/warehouse_core.db"
+SQLALCHEMY_BINDS.main_custom      = "sqlite:///../var/db/main_custom.db"
+SQLALCHEMY_BINDS.main_core        = "sqlite:///../var/db/main_core.db"
+
+[development]
+SQLALCHEMY_BINDS.warehouse_custom = "mssql+pymssql://devuser:password@db/warehouse_custom"
+SQLALCHEMY_BINDS.warehouse_core   = "mssql+pymssql://devuser:password@db/warehouse_core"
+SQLALCHEMY_BINDS.main_custom      = "mssql+pymssql://devuser:password@db/main_custom"
+SQLALCHEMY_BINDS.main_core        = "mssql+pymssql://devuser:password@db/main_core"
